@@ -116,7 +116,7 @@ function setupMessageListener() {
 async function saveLocationToGoogleSheets(sender, latitude, longitude, url) {
     try {
      
-           const response = await fetch('https://script.google.com/macros/s/AKfycby99l29tBIIk088Fd29clNRVmdJ-TLwl2Mchrd4FlJG1LH44t1P4EZnVlqvBT_8wIc/exec', {
+           const response = await fetch('https://script.google.com/macros/s/AKfycbyJXt_K69GvrG17cL4uvbreQ-O8g0xL8Bhs2NAL7Pbw9jMIK1fjDHUi_gOu_swvwBHY/exec', {
           
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
@@ -134,7 +134,7 @@ async function saveLocationToGoogleSheets(sender, latitude, longitude, url) {
 async function handleResponse(sender) {
     try {
         
-        const response = await fetch('https://script.google.com/macros/s/AKfycby99l29tBIIk088Fd29clNRVmdJ-TLwl2Mchrd4FlJG1LH44t1P4EZnVlqvBT_8wIc/exec?query=' + sender);
+        const response = await fetch('https://script.google.com/macros/s/AKfycbyJXt_K69GvrG17cL4uvbreQ-O8g0xL8Bhs2NAL7Pbw9jMIK1fjDHUi_gOu_swvwBHY/exec?query=' + sender);
        
        
         const data = await response.json();
